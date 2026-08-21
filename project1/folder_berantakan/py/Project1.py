@@ -1,4 +1,5 @@
 import os
+import shutil
 os.system('cls')
 
 target = 'folder_berantakan'
@@ -7,8 +8,12 @@ print(daftar)
 
 for file in daftar:
     nama_depan, ekstensi = os.path.splitext(file)
-    if ekstensi == ".jpg":
+    if ekstensi != "":
         a = ekstensi[1:]
-        b = os.path.join(target, "gambar")
+        b = os.path.join(target, a)
         os.makedirs(b, exist_ok=True)
+        c = os.path.join(target, file)
+        d = os.path.join(b, file)
+        e = shutil.move(c,d)
+
         
