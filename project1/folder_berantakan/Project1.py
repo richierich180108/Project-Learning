@@ -8,7 +8,7 @@ print(daftar)
 
 for file in daftar:
     nama_depan, ekstensi = os.path.splitext(file)
-    if ekstensi != "":
+    if ekstensi != "" and file != 'Project1.py':
         a = ekstensi[1:]
         b = os.path.join(target, a)
         os.makedirs(b, exist_ok=True)
@@ -16,4 +16,9 @@ for file in daftar:
         d = os.path.join(b, file)
         e = shutil.move(c,d)
 
+#evaluasi 
+'''
+1. coba lebih teliti lagi dalam melihat kode 
+2. coba pahami dulu apa aja urutan logic nya 
+'''
         
