@@ -7,8 +7,8 @@ print(daftar)
 
 for file in daftar:
     nama_depan, ekstensi = os.path.splitext(file)
-    if file == ".jpg":
-        ekstensi[1:]
-        #os.path.join(target, "gambar")
-        print(ekstensi)
-print(file)
+    if ekstensi == ".jpg":
+        a = ekstensi[1:]
+        b = os.path.join(target, "gambar")
+        os.makedirs(b, exist_ok=True)
+        
