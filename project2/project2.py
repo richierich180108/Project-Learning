@@ -35,4 +35,9 @@ r.tambahchar(char3)
 
 r.tampilkansemua()
 
+#eval 
+'''
+1. pahamin ulang tentang oop 
+2. lebih sering membaca secara detail
+'''
 
