@@ -1,0 +1,7 @@
+
+===Hasil Analisis Data===
+total data yang diolah: 10 baris
+total keseluruhan 288000
+Rata-Rata 28800.0
+nilai tertinggi 33000
+===
