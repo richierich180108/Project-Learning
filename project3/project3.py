@@ -26,3 +26,13 @@ with open('laporan.txt','w') as fil:
 
 print("\n[INFO] Laporan berhasil diekspor ke 'laporan.txt'!")
 
+
+#eval 
+'''
+1. kalo pengen buat semacem kumpulan data di dalam loop yang ingin memamsukkan banyak data 
+   dan suatu kumpulan tersebut hanya ingin di bikin 1 aja, cukup tempatkan di luar kondisi loopnya
+   jangan didalam
+
+2. lebih teliti lagi dalam membaca 
+
+'''
