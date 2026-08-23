@@ -28,3 +28,8 @@ while True:
         input('tekan enter untuk kembali ke menu')
     else:
         break
+
+#eval
+'''
+1. lebih teliti lagi dalam berfikir
+'''
