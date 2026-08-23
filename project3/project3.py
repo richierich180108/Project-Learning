@@ -33,6 +33,6 @@ print("\n[INFO] Laporan berhasil diekspor ke 'laporan.txt'!")
    dan suatu kumpulan tersebut hanya ingin di bikin 1 aja, cukup tempatkan di luar kondisi loopnya
    jangan didalam
 
-2. lebih teliti lagi dalam membaca 
+2. lebih teliti lagi
 
 '''

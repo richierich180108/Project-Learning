@@ -38,6 +38,6 @@ r.tampilkansemua()
 #eval 
 '''
 1. pahamin ulang tentang oop 
-2. lebih sering membaca secara detail
+2. lebih sering berfikir 
 '''
 
