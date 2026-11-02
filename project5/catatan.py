@@ -21,16 +21,17 @@ def cari_catatan(identitas):
     for i in kumpulan_c:
         if i['id'] == identitas['id']:
             return i
-        else:
-            raise NameError('coba lagi')
-     
+    else:
+        raise NameError('coba lagi') 
 
 
     
 subject1 = buat_catatan('mtk','pythagoras','relasi segitiga')
-buat_catatan('fisika','energi dan gaya','memahami bagaimana gaya dan energi bekerja')
-buat_catatan('coding','variabel','bagaimana sebuah variabel itu bekerja ')
+subject2 = buat_catatan('fisika','energi dan gaya','memahami bagaimana gaya dan energi bekerja')
+subject3 = buat_catatan('coding','variabel','bagaimana sebuah variabel itu bekerja ')
 print(subject1['id'])
 
 #print(Kumpulan_catatan)
 print(cari_catatan(subject1))
+print(cari_catatan(subject2))
+print(cari_catatan(subject3))
