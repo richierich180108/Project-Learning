@@ -19,19 +19,17 @@ def buat_catatan(kategori:str,topik:str,isi:str):
 def cari_catatan(identitas):
     kumpulan_c = Kumpulan_catatan
     for i in kumpulan_c:
-        if i['id'] == identitas['id']:
+        if i['id'] == identitas:
             return i
-    else:
-        raise NameError('coba lagi') 
+    raise NameError('coba lagi') 
 
 
     
 subject1 = buat_catatan('mtk','pythagoras','relasi segitiga')
 subject2 = buat_catatan('fisika','energi dan gaya','memahami bagaimana gaya dan energi bekerja')
 subject3 = buat_catatan('coding','variabel','bagaimana sebuah variabel itu bekerja ')
-print(subject1['id'])
 
-#print(Kumpulan_catatan)
-print(cari_catatan(subject1))
-print(cari_catatan(subject2))
-print(cari_catatan(subject3))
+print(cari_catatan(subject1['id']))
+print(cari_catatan(subject2['id']))
+print(cari_catatan(subject3['id']))
+print(cari_catatan('asal ketik'))
