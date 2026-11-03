@@ -16,7 +16,7 @@ def buat_catatan(kategori:str,topik:str,isi:str):
 
     return c1
 
-def cari_catatan(identitas):
+def cari_catatan(identitas:str):
     kumpulan_c = Kumpulan_catatan
     for i in kumpulan_c:
         if i['id'] == identitas:
@@ -28,8 +28,11 @@ def cari_catatan(identitas):
 subject1 = buat_catatan('mtk','pythagoras','relasi segitiga')
 subject2 = buat_catatan('fisika','energi dan gaya','memahami bagaimana gaya dan energi bekerja')
 subject3 = buat_catatan('coding','variabel','bagaimana sebuah variabel itu bekerja ')
+print(Kumpulan_catatan)
 
-print(cari_catatan(subject1['id']))
-print(cari_catatan(subject2['id']))
-print(cari_catatan(subject3['id']))
-print(cari_catatan('asal ketik'))
+try:
+    teks = input('masukkan id: ')
+    print(cari_catatan(teks))
+except:
+    print(TypeError('salah id, coba lagi'))
+print('program masih berjalan')
