@@ -1,4 +1,7 @@
 import os
 os.system('cls')
-x = [1, 2].append(3)
-print(x)
+try:
+    hasil = 10 / 0
+except ZeroDivisionError:
+    print('tidak bisa dibagi nol')
+print('program masih berjalan')

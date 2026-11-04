@@ -33,6 +33,6 @@ print(Kumpulan_catatan)
 try:
     teks = input('masukkan id: ')
     print(cari_catatan(teks))
-except:
-    print(TypeError('salah id, coba lagi'))
+except NameError:
+    print('salah id, coba lagi')
 print('program masih berjalan')
