@@ -21,7 +21,7 @@ def cari_catatan(identitas:str):
     for i in kumpulan_c:
         if i['id'] == identitas:
             return i
-    raise NameError('coba lagi') 
+    raise ValueError('coba lagi') 
 
 
     
@@ -33,6 +33,6 @@ print(Kumpulan_catatan)
 try:
     teks = input('masukkan id: ')
     print(cari_catatan(teks))
-except NameError:
-    print('salah id, coba lagi')
+except ValueError:
+    print('data yang dicari tidak ada')
 print('program masih berjalan')
